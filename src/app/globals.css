@@ -1,0 +1,42 @@
+/* Reset + Typography */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1e293b;
+
+  /* Matching animated gradient */
+  background: linear-gradient(135deg, #cfe9ff, #e0f2fe, #f0f9ff);
+  background-size: 200% 200%;
+  animation: globalBackgroundFloat 10s ease-in-out infinite;
+}
+
+@keyframes globalBackgroundFloat {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Optional: make the page smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Anchor cleanup */
+a {
+  color: inherit;
+  text-decoration: none;
+}
