@@ -20,9 +20,9 @@ const RsvpForm = () => {
     formData.set("Guests", guests);
   
     try {
-      const res = await fetch("https://formsubmit.co/beautiful1210felix@gmail.com", {
+      const res = await fetch("https://formsubmit.co/dc07f39f31981ac1737bfe6d4b8b176b", {
         method: "POST",
-        body: formData,
+        body: formData
       });
   
       if (res.ok) {
